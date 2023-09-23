@@ -72,37 +72,6 @@ button {
     background-color: #eee;
 }
 
-/* 
-.dp:hover .dp-menu, .cat:hover .cat-menu {
-    display: block;
-}
-
-.sub-menu {
-    padding-left: 0;
-    margin: 0;
-    list-style-type: none;
-    border: 1px solid #999;
-}
-
-.sub-menu>li+li {
-    border-top: 1px solid #999;
-
-}
-
-.sub-menu>li>a {
-    display: block;
-    padding: .5em 1.5em;
-    background-color: #eee;
-    color: #369;
-    text-decoration: none;
-}
-
-.sub-menu>li>a:hover {
-    background-color: #fff;
-}
- */
-
-
 
 /* Page */
 
@@ -131,6 +100,15 @@ button {
     color: var(--primary-color);
     font-weight: 600;
     padding: 4px 12px;
+}
+
+.link {
+    transition: .8s linear;
+}
+
+.link:hover {
+    background-color: #1c1c1c;
+    color: white;
 }
 
 .line {
@@ -172,6 +150,12 @@ button {
     margin-left: 20px;
     padding: 6px 8px;
     height: 50px;
+    transition: .6s linear;
+
+}
+
+.cat:hover {
+    display: block;
 }
 
 .cat:hover .cat-menu {
@@ -221,6 +205,8 @@ button {
     width: 24px;
     height: 24px;
     margin-left: 15px;
+    transition: .6s linear;
+
 }
 
 .cat-item:hover img {
@@ -265,6 +251,14 @@ button {
     letter-spacing: 1.4px;
 }
 
+.nav-item {
+    transition: .6s ease-in-out;
+}
+
+.nav-item:hover {
+    background-color: var(--primary-color);
+}
+
 /* Logo */
 
 .logo {
@@ -276,7 +270,7 @@ button {
 .logo img {
     padding: 0 20px;
     height: 45px;
-    background-color: var(--primary-color);
+    background-color: rgb(235, 235, 235);
 }
 
 /* Shops */
@@ -421,6 +415,7 @@ button {
     width: 340px;
     height: 260px;
     border-radius: 12px;
+    transition: 1.2s ease-in-out;
 }
 
 .product-item:hover {
@@ -566,6 +561,10 @@ button {
     align-items: center;
 }
 
+.media li img {
+    width: 100%;
+}
+
 .copy {
     width: 100%;
     display: flex;
@@ -576,4 +575,150 @@ button {
 
 .copy p {
     text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    transition: 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.copyright:hover {
+    font-size: 2rem;
+}
+
+
+
+/* Cart */
+
+.cart-box {
+    width: 80%;
+    margin: auto 10%;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    padding: 12px 40px;
+    margin: 30px auto;
+}
+
+.cart-item {
+    display: flex;
+}
+
+.cart-link {
+    width: 60%;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.prix, .piece, .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title {
+    margin-left: 20%;
+}
+
+.product-add {
+    margin-left: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.add {
+    padding: 20px 60px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.valider {
+    color: white;
+    background-color: #141414;
+}
+
+.total {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Connexion */
+
+.connect-container {
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    width: 80%;
+    height: 90vh;
+    margin: auto 10%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 40%;
+}
+
+.lines {
+    width: 6px;
+    background-color: var(--primary-color);
+    height: 90%;
+    margin: 5% auto;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../src/img/logo.png");
+    background-size: contain;
+}
+
+
+.form-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-box {
+    margin: 20px ;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.input-box input {
+    width: 80%;
+    height: 70px;
+    border-radius: 25px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-left: 60px;
+}
+
+.form-validate {
+    width: 60%;
+    margin: 15%;
+    height: 90px;
+    font-size: 1.8rem;
+    color: #141414;
+    transition: .6s;
+}
+
+.form-validate:hover {
+    background-color: var(--primary-color);
 }
