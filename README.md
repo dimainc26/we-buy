@@ -12,8 +12,7 @@
 - CSS
 
 ## Captures d'écran
-![Home Screen](https://github.com/dimainc26/we_buy/blob/main/assets/home.png)
-![screenshot_04_02_2024 16-07-15](https://github.com/dimainc26/we-buy/assets/125144533/8439f9b6-6ff8-41cf-a9df-50629e1ef2bc)
+![Home Screen](https://github.com/dimainc26/we-buy/blob/main/assets/home.png)
 
 ## Démo
 [Lien vers la démo](https://dev.dimazanre.com/we-buy)
